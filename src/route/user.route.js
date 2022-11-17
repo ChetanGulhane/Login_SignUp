@@ -4,7 +4,7 @@ const router = require("express").Router();
 
 const UserRoute = require("../controller/user.controller");
 
-const {adduserValidation} = require("../helper/validation/user.validation");
+const {adduserValidation} = require("../../helper/validation/user.validation");
 
 
 router.post("/signUp", adduserValidation, UserRoute.add);
